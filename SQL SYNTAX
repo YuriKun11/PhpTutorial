@@ -12,3 +12,7 @@ ADD COLUMN `email` VARCHAR(255) NOT NULL AFTER `username`;
 how to rename table name
 
 RENAME TABLE `old_table_name` TO `new_table_name`;
+
+drop colomn in your table
+ALTER TABLE `reference`
+DROP COLUMN `status`;
