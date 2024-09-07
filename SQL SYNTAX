@@ -1,0 +1,10 @@
+SQL SYNTAX
+
+if you want to change something in your table
+
+ALTER TABLE users
+CHANGE COLUMN `users` `username` VARCHAR(255) NOT NULL;
+
+if you want to add column in your table
+ALTER TABLE users
+CHANGE COLUMN `users` `username` VARCHAR(255) NOT NULL;
