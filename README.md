@@ -1,4 +1,4 @@
-# Php Tutorial
+# Simple PHP Crud with Login and Registration form
 
 1. Create database
 2. Create connections to the database
