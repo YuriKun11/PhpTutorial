@@ -8,3 +8,7 @@ CHANGE COLUMN `users` `username` VARCHAR(255) NOT NULL;
 if you want to add column in your table
 ALTER TABLE users
 ADD COLUMN `email` VARCHAR(255) NOT NULL AFTER `username`;
+
+how to rename table name
+
+RENAME TABLE `old_table_name` TO `new_table_name`;
