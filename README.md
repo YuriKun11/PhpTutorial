@@ -1,5 +1,7 @@
 # Simple PHP Crud with Login and Registration form
 
+STEPS:
+
 1. Create database
 2. Create connections to the database
 3. Create Register / Login form
