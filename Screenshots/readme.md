@@ -1,34 +1,109 @@
-# Screenshots
-
-
-# My Project
+# Code Snippet
 
 ## Example Code
 
 Here is a code snippet you can copy:
 
-```python
-print("Hello")
-```
-
 ## Database Connection
+```
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "test";
 
-![image](https://github.com/user-attachments/assets/9b6ebf0a-6fd9-490f-9387-c851ea5590bb)
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    echo "Error connecting to database";
+}
+
+```
 
 ## Form and Insert to Database
 
-![image](https://github.com/user-attachments/assets/ff94f3a5-52c0-44fd-bae7-1d750295d153)
-![image](https://github.com/user-attachments/assets/3d0833c8-a320-4956-a586-73db4a9948c6)
+### Form
+```
+ <form action="index.php" method="POST">
+        <label for="name">Enter name: </label>
+        <input type="text" id="name" name="name" required>
+        <input type="submit" name="add" value="Submit">
+    </form>
+```
+
+### Insert Function
+```
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add'])) {
+    $name = $_POST["name"];
+
+    $sql = "INSERT INTO crud(name) VALUES (?)";
+    
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $name);
+
+    if ($stmt->execute()) {
+        echo "Name Added";
+    } else {
+        echo "Error";
+    }
+}
+```
+
 
 ## Fetch Database
+```
+$sqlFetch = "SELECT id, name FROM crud";
+$result = $conn->query($sqlFetch);
+```
+```
+ <h2>Names: </h2>
+    <?php
+        if($result->num_rows > 0){
+            while($row = $result->fetch_assoc()){
+                echo "<li>" .htmlspecialchars($row['name']) . "</li>";
+            }
+        }
+    ?>
+```
 
-![image](https://github.com/user-attachments/assets/40949453-794c-4df6-8218-dca9bf8831c7)
-![image](https://github.com/user-attachments/assets/49802165-d331-4888-a17b-13274088d070)
 
 ## Delete Function
+```
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete'])) {
+    $id = $_POST["id"];
 
-![image](https://github.com/user-attachments/assets/05e5660c-7414-4650-8cf4-e081a211d267)
-![image](https://github.com/user-attachments/assets/3b13cfbc-6522-4142-883f-19eb586d0af7)
+    $sql = "DELETE FROM crud WHERE id = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("i", $id);
+
+    if ($stmt->execute()) {
+        echo "Name Deleted";
+    } else {
+        echo "Error deleting name";
+    }
+}
+```
+```
+<h2>Names List:</h2>
+    <ul>
+        <?php
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo "<li>" . htmlspecialchars($row['name']) . "
+                    <form action='index.php' method='POST' style='display:inline;'>
+                        <input type='hidden' name='id' value='" . $row['id'] . "'>
+                        <input type='submit' name='delete' value='Delete' 
+                        onclick=\"return confirm('Are you sure you want to delete this name?');\">
+                    </form>
+                </li>";
+            }
+        } else {
+            echo "<li>No names found</li>";
+        }
+        ?>
+    </ul>
+  ```
+
+
 
 
 
