@@ -14,6 +14,13 @@
 ![image](https://github.com/user-attachments/assets/40949453-794c-4df6-8218-dca9bf8831c7)
 ![image](https://github.com/user-attachments/assets/49802165-d331-4888-a17b-13274088d070)
 
+## Delete Function
+
+![image](https://github.com/user-attachments/assets/99950cdf-700e-4bcd-ad27-4402defed968)
+![image](https://github.com/user-attachments/assets/3b13cfbc-6522-4142-883f-19eb586d0af7)
+
+
+
 
 
 
