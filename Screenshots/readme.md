@@ -1,9 +1,5 @@
 # Code Snippet
 
-## Example Code
-
-Here is a code snippet you can copy:
-
 ## Database Connection
 ```
 $servername = "localhost";
