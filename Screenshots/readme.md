@@ -1,5 +1,15 @@
 # Screenshots
 
+
+### Tips:
+- **Headings**: Use `#`, `##`, `###`, etc., for different heading levels.
+- **Lists**: Use `-` or `*` for bullet points and numbers for ordered lists.
+- **Links**: Use `[link text](URL)` to create hyperlinks.
+- **Images**: Use `![alt text](image URL)` to add images.
+
+With this structure, anyone viewing your README file will be able to easily copy the code snippets!
+
+
 ## Database Connection
 
 ![image](https://github.com/user-attachments/assets/9b6ebf0a-6fd9-490f-9387-c851ea5590bb)
