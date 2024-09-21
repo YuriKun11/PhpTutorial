@@ -16,7 +16,7 @@
 
 ## Delete Function
 
-![image](https://github.com/user-attachments/assets/99950cdf-700e-4bcd-ad27-4402defed968)
+![image](https://github.com/user-attachments/assets/05e5660c-7414-4650-8cf4-e081a211d267)
 ![image](https://github.com/user-attachments/assets/3b13cfbc-6522-4142-883f-19eb586d0af7)
 
 
