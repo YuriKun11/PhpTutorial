@@ -1,14 +1,14 @@
 # Screenshots
 
 
-### Tips:
-- **Headings**: Use `#`, `##`, `###`, etc., for different heading levels.
-- **Lists**: Use `-` or `*` for bullet points and numbers for ordered lists.
-- **Links**: Use `[link text](URL)` to create hyperlinks.
-- **Images**: Use `![alt text](image URL)` to add images.
+# My Project
 
-With this structure, anyone viewing your README file will be able to easily copy the code snippets!
+## Example Code
 
+Here is a code snippet you can copy:
+
+```python
+print("Hello")
 
 ## Database Connection
 
