@@ -9,6 +9,7 @@ Here is a code snippet you can copy:
 
 ```python
 print("Hello")
+```
 
 ## Database Connection
 
