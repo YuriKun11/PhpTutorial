@@ -16,3 +16,6 @@ RENAME TABLE `old_table_name` TO `new_table_name`;
 Drop colomn in your table
 ALTER TABLE `reference`
 DROP COLUMN `status`;
+
+Insert to table
+INSERT INTO user_level (level_name) VALUES ('Super Admin');
