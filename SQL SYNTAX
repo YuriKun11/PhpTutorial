@@ -13,7 +13,7 @@ Rename table name
 
 RENAME TABLE `old_table_name` TO `new_table_name`;
 
-Drop colomn in your table
+Drop column in your table
 ALTER TABLE `reference`
 DROP COLUMN `status`;
 
