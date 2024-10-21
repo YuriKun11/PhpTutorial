@@ -19,3 +19,7 @@ DROP COLUMN `status`;
 
 Insert to table
 INSERT INTO user_level (level_name) VALUES ('Super Admin');
+
+SET ALL INTEGER DATA TO 0
+UPDATE tbl_lib
+SET Qty = 0;
